@@ -62,6 +62,7 @@ observation = env.reset()
 reward_sum=0
 while True:
     env.render()
+    
 
     x=np.reshape(observation, [1,input_size])
     Qs=sess.run(Qpred, feed_dict={X:x})
